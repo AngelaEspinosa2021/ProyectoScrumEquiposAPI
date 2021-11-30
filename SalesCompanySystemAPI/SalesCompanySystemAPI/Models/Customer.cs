@@ -15,10 +15,10 @@ namespace SalesCompanySystemAPI.Models
         public string customerPhoto { get; set; }
 
         [Required]
-        public int documentType { get; set; }
+        public string documentType { get; set; }
 
         [Required]
-        public string identificationNumber { get; set; }
+        public int identificationNumber { get; set; }
 
         [Required]
         public string nameCustomer { get; set; }

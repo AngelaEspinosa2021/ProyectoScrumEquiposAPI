@@ -37,16 +37,16 @@ namespace SalesCompanySystemAPI.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("documentType")
-                        .HasColumnType("int");
+                    b.Property<string>("documentType")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("emailCustomer")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("identificationNumber")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("identificationNumber")
+                        .HasColumnType("int");
 
                     b.Property<string>("lastNameCustomer")
                         .IsRequired()

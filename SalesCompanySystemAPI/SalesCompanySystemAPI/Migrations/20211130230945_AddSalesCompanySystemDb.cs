@@ -13,8 +13,8 @@ namespace SalesCompanySystemAPI.Migrations
                     id_Customer = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     customerPhoto = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    documentType = table.Column<int>(type: "int", nullable: false),
-                    identificationNumber = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    documentType = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    identificationNumber = table.Column<int>(type: "int", nullable: false),
                     nameCustomer = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     lastNameCustomer = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     addressCustomer = table.Column<string>(type: "nvarchar(max)", nullable: false),

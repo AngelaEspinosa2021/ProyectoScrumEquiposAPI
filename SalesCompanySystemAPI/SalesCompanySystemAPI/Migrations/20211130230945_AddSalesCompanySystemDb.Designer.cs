@@ -9,7 +9,7 @@ using SalesCompanySystemAPI.Data;
 namespace SalesCompanySystemAPI.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20211130225655_AddSalesCompanySystemDb")]
+    [Migration("20211130230945_AddSalesCompanySystemDb")]
     partial class AddSalesCompanySystemDb
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -39,16 +39,16 @@ namespace SalesCompanySystemAPI.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("documentType")
-                        .HasColumnType("int");
+                    b.Property<string>("documentType")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("emailCustomer")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("identificationNumber")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("identificationNumber")
+                        .HasColumnType("int");
 
                     b.Property<string>("lastNameCustomer")
                         .IsRequired()
